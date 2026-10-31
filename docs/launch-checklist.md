@@ -1,0 +1,11 @@
+# Launch checklist
+- Stitch design integrated; review the finished layout with the owner. See docs/stitch-integration.md for content corrections.
+- Confirm the operator identity, final brand, UW relationship wording, programme descriptions and personal referral attribution.
+- Supply and verify the Connector destination; no Connector button is rendered until configured.
+- Complete Privacy and Accessibility pages, add a real accessibility contact and review hosting/logging disclosures.
+- Set VITE_SITE_URL to the final HTTPS origin. Leave VITE_SITE_INDEXABLE=false until launch approval; only then set true for production. Preview builds remain noindex via VERCEL_ENV.
+- Replace the starter social image and favicon if branding changes.
+- Validate keyboard navigation, mobile layout, final links, metadata, canonical, robots.txt and sitemap.xml.
+- Run npm run typecheck, npm run check and npm run build.
+- Import the repository into the intended Vercel account when deployment is requested. Vercel configuration is provided; no account or project has been linked.
+- Cloudflare DNS is only needed when a custom domain is selected. Keep Vercel as the application host.
